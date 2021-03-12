@@ -1,0 +1,9 @@
+table {
+    justify-content: center;
+    position: relative;
+    top: 20px;
+}
+
+td {
+    padding: 9px;
+}

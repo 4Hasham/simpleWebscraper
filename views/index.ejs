@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webscrapper</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+</head>
+<body>
+    <h1>Webscraper For Google Scholars</h1>
+    <div id="search">
+        <form action="/get_scholar/" method="POST">
+            <input placeholder="Enter URL of Google Scholar page.." name="url" />
+            <input type="submit" name="submit" value="GET" />
+        </form>
+    </div>
+    <div id="info">
+        <table border="1">
+            <tr>
+                <td>Name:</td>
+                <td><%= name %></td>
+            </tr>
+            <tr>
+                <td>Designation:</td>
+                <td><%= desig %></td>
+            </tr>
+            <tr>
+                <td>Department:</td>
+                <td><%= dept + ", " + uni %></td>
+            </tr>
+            <tr>
+                <td>Interests:</td>
+                <td><%= interests %></td>
+            </tr>
+            <tr>
+                <td>Most Cited Research Paper:</td>
+                <td><%= most_cited %></td>
+            </tr>
+            <tr>
+                <td>Total Citations:</td>                
+                <td><%= citations %></td>
+            </tr>
+        </table>
+    </div>
+</body>
+<!-- <script type="text/javascript" src="js/script.js"></script> -->
+</html>
